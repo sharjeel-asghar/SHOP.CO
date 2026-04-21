@@ -1,0 +1,114 @@
+/* #region FONT */
+
+/* ---------- FONTS START ----------- */
+
+/* BOLD */
+@font-face{
+  font-family: 'Integral CF';
+  src: url('../Assets/Fonts/integral/IntegralCF-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* BoldOblique */
+@font-face{
+  font-family: 'Integral CF';
+  src: url('../Assets/Fonts/integral/IntegralCF-BoldOblique.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+/* Extra BOLD */
+@font-face{
+  font-family: 'Integral CF';
+  src: url('../Assets/Fonts/integral/IntegralCF-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Extra BoldOblique */
+@font-face{
+  font-family: 'Integral CF';
+  src: url('../Assets/Fonts/integral/IntegralCF-ExtraBoldOblique.otf') format('opentype');
+  font-weight: 800;
+  font-style: oblique;
+}
+
+/* Heavy BOLD */
+@font-face{
+  font-family: 'Integral CF';
+  src: url('../Assets/Fonts/integral/IntegralCF-Heavy.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Heavy Oblique */
+@font-face{
+  font-family: 'Integral CF';
+  src: url('../Assets/Fonts/integral/IntegralCF-HeavyOblique.otf') format('opentype');
+  font-weight: 900;
+  font-style: oblique;
+}
+
+/* DemiBold */
+@font-face{
+  font-family: 'Integral CF';
+  src: url('../Assets/Fonts/integral/IntegralCF-DemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* DemiBoldOblique */
+@font-face{
+  font-family: 'Integral CF';
+  src: url('../Assets/Fonts/integral/IntegralCF-DemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style:oblique;
+}
+/* Medium */
+@font-face{
+  font-family: 'Integral CF';
+  src: url('../Assets/Fonts/integral/IntegralCF-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Medium Oblique */
+@font-face{
+  font-family: 'Integral CF';
+  src: url('../Assets/Fonts/integral/IntegralCF-MediumOblique.otf') format('opentype');
+  font-weight: 500;
+  font-style:oblique;
+}
+
+/* regular  */
+@font-face{
+  font-family: 'Integral CF';
+  src: url('../Assets/Fonts/integral/IntegralCF-Regular.otf') format('opentype');
+  font-weight:400;
+  font-style: normal;
+}
+
+/* Medium BoldOblique */
+@font-face{
+  font-family: 'Integral CF';
+  src: url('../Assets/Fonts/integral/IntegralCF-RegularOblique.otf') format('opentype');
+  font-weight: 400;
+  font-style:oblique;
+}
+
+/* ---------- FONTS  END  ----------- */
+/* #endregion */
+
+/* #region Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Integral CF',sans-serif;
+}
+
+/* #endregion*/
