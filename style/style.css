@@ -3,7 +3,7 @@
 /* ---------- FONTS START ----------- */
 
 /* BOLD */
-@font-face{
+@font-face {
   font-family: 'Integral CF';
   src: url('../Assets/Fonts/integral/IntegralCF-Bold.otf') format('opentype');
   font-weight: bold;
@@ -11,14 +11,15 @@
 }
 
 /* BoldOblique */
-@font-face{
+@font-face {
   font-family: 'Integral CF';
   src: url('../Assets/Fonts/integral/IntegralCF-BoldOblique.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
 }
+
 /* Extra BOLD */
-@font-face{
+@font-face {
   font-family: 'Integral CF';
   src: url('../Assets/Fonts/integral/IntegralCF-ExtraBold.otf') format('opentype');
   font-weight: 800;
@@ -26,7 +27,7 @@
 }
 
 /* Extra BoldOblique */
-@font-face{
+@font-face {
   font-family: 'Integral CF';
   src: url('../Assets/Fonts/integral/IntegralCF-ExtraBoldOblique.otf') format('opentype');
   font-weight: 800;
@@ -34,7 +35,7 @@
 }
 
 /* Heavy BOLD */
-@font-face{
+@font-face {
   font-family: 'Integral CF';
   src: url('../Assets/Fonts/integral/IntegralCF-Heavy.otf') format('opentype');
   font-weight: 900;
@@ -42,7 +43,7 @@
 }
 
 /* Heavy Oblique */
-@font-face{
+@font-face {
   font-family: 'Integral CF';
   src: url('../Assets/Fonts/integral/IntegralCF-HeavyOblique.otf') format('opentype');
   font-weight: 900;
@@ -50,7 +51,7 @@
 }
 
 /* DemiBold */
-@font-face{
+@font-face {
   font-family: 'Integral CF';
   src: url('../Assets/Fonts/integral/IntegralCF-DemiBold.otf') format('opentype');
   font-weight: 600;
@@ -58,14 +59,15 @@
 }
 
 /* DemiBoldOblique */
-@font-face{
+@font-face {
   font-family: 'Integral CF';
   src: url('../Assets/Fonts/integral/IntegralCF-DemiBold.otf') format('opentype');
   font-weight: 600;
-  font-style:oblique;
+  font-style: oblique;
 }
+
 /* Medium */
-@font-face{
+@font-face {
   font-family: 'Integral CF';
   src: url('../Assets/Fonts/integral/IntegralCF-Medium.otf') format('opentype');
   font-weight: 500;
@@ -73,27 +75,27 @@
 }
 
 /* Medium Oblique */
-@font-face{
+@font-face {
   font-family: 'Integral CF';
   src: url('../Assets/Fonts/integral/IntegralCF-MediumOblique.otf') format('opentype');
   font-weight: 500;
-  font-style:oblique;
+  font-style: oblique;
 }
 
 /* regular  */
-@font-face{
+@font-face {
   font-family: 'Integral CF';
   src: url('../Assets/Fonts/integral/IntegralCF-Regular.otf') format('opentype');
-  font-weight:400;
+  font-weight: 400;
   font-style: normal;
 }
 
 /* Medium BoldOblique */
-@font-face{
+@font-face {
   font-family: 'Integral CF';
   src: url('../Assets/Fonts/integral/IntegralCF-RegularOblique.otf') format('opentype');
   font-weight: 400;
-  font-style:oblique;
+  font-style: oblique;
 }
 
 /* ---------- FONTS  END  ----------- */
@@ -101,14 +103,351 @@
 
 /* #region Reset */
 
+:root {
+  /* <!-- COlORS --> */
+
+  --black: #000000;
+  --white: #ffffff;
+  --light-gray: #f0f0f0;
+  --black-40: #00000066;
+  --primary-gray: #f2f0f1;
+  --background-primary: #F0EEED;
+  --primary-red: #FF3333;
+
+  /* <!-- TypoGraphy --> */
+  /*  
+  --text-xs: 0.875rem;
+   14px - captions, footnotes 
+  --text-sm: 1rem;
+   16px - body text
+  --text-md: 1.25rem;
+   20px - labels, subtitles 
+  --text-lg: 1.5rem;
+  24px - subheadings 
+  --text-xl: 2.25rem;
+   36px - section headers 
+  --text-2xl: 2.5rem;
+   40px - page subheadings 
+  --text-3xl: 3rem;
+   48px - page subheadings
+  --text-4xl: 4rem;
+   64px - main headings 
+ */
+
+  --text-xs: 0.875rem;
+  /* 14px - captions, footnotes */
+  --text-sm: 1rem;
+  /* 16px - body text */
+  --text-md: 1.25rem;
+  /* 20px - labels, subtitles */
+  --text-lg: 1.5rem;
+  /* 24px - subheadings */
+  --text-xl: 1.2rem;
+  /* 36px - section headers */
+  --text-2xl: 1.5rem;
+  /* 40px - page subheadings */
+  --text-3xl: 2rem;
+  /* 48px - page subheadings */
+  --text-4xl: 2.25rem;
+  /* 64px - main headings */
+
+  /* Keep semantic aliases if needed */
+  --heading: var(--text-4xl);
+  --sub-heading: var(--text-3xl);
+  --label: var(--text-lg);
+  --label-lg: var(--text-2xl);
+
+  --radius-sm: 20px;
+  /* Small rounding */
+  --radius-md: 40px;
+  /* Medium rounding */
+  --radius-lg: 60px;
+  /* Large rounding */
+  --radius-circle: 50%;
+  /* Perfect circle/pill shape */
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family:'Integral CF',sans-serif;
+  font-family: 'Integral CF', sans-serif;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+button,
+input {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a,
+span,
+button,
+input,
+i {
+  display: block;
+}
+
+/* img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+} */
+
+.img-cover {
+  width: 100%;
+  height: auto;
+  /* Maintains aspect ratio automatically */
+  max-width: 100%;
+  /* Never exceeds container */
+  display: block;
 }
 
 /* #endregion*/
+
+/* #region Reuseable */
+.h1 {
+  font-size: var(--heading);
+  font-weight: 900;
+  font-family: 'Integral CF', sans-serif;
+  font-style: normal;
+}
+
+.h2 {
+  font-size: var(--sub-heading);
+  font-weight: bold;
+}
+
+.h3 {
+  font-size: var(--label-lg);
+  font-weight: 600;
+}
+
+.text {
+  font-size: var(--text-xs);
+  font-weight: 400;
+}
+
+.body {
+  font-size: var(--text-sm);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.label {
+  font-size: var(--label);
+  font-weight: 500;
+}
+
+.section {
+  margin-block-end: 50px;
+}
+
+
+/* #endregion */
+
+/* #region UTILITY BAR */
+.utility-bar {
+  background-color: var(--black);
+  padding: 5px 0px;
+
+}
+
+.utility-bar p {
+  font-size: 12px;
+  color: var(--white);
+  font-weight: 400;
+  font-family: 'Satoshi', sans-serif;
+  text-align: center;
+}
+
+
+.utility-bar p em {
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* #endregion */
+
+/* #region Header */
+
+header {
+  background-color: var(--white);
+}
+
+header .container {
+  padding: 13px 10px;
+}
+
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-actions,
+.right-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.left-actions {
+  gap: 15px;
+}
+
+.nav-icon img {
+  width: 18px;
+}
+
+.logo {
+  font-size: var(--text-lg);
+  margin-bottom: 8px;
+  font-weight: 800;
+}
+
+/* #endregion */
+
+/* #region Hero */
+
+.hero {
+  background-color: var(--primary-gray);
+}
+
+.hero-wrapper {
+  padding-block-start: 40px;
+  padding-inline: 15px;
+}
+
+.hero-wrapper .hero-text .title {
+  margin-bottom: 15px;
+}
+
+.hero-text .decs {
+  color: var(--black-40);
+  font-weight: 400;
+  font-family: 'Satoshi', sans-serif;
+  margin-bottom: 20px;
+}
+
+.hero-text .hero-btn {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 300px;
+  margin-inline: auto;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 14px;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-family: 'Satoshi', sans-serif;
+  font-size: var(--text-sm);
+}
+
+.achivements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 10px;
+  flex-wrap: wrap;
+}
+
+.content h4 {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 800;
+  line-height: 1;
+  font-size: var(--text-lg);
+}
+
+.content:first-child {
+  border-right: 1px solid rgba(92, 68, 68, 0.10);
+  padding-right: 20px;
+}
+
+.content span {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--black-40);
+  font-family: 'Satoshi', sans-serif;
+  margin-top: 4px;
+}
+
+.hero-Banner {
+  position: relative;
+}
+
+.hero-Banner::before {
+  content: '';
+  position: absolute;
+  top: 30%;
+  left: 20px;
+  background: url('../Assets/images/hero-extra.png');
+  width: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40px;
+  z-index: 4;
+}
+
+.hero-Banner::after {
+  content: '';
+  position: absolute;
+  top: 1cqi;
+  right: 10px;
+  background: url('../Assets/images/hero-extra.png');
+  width: 70px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 70px;
+  z-index: 4;
+}
+
+.brands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  row-gap: 20px;
+  column-gap: 10px;
+  background-color: var(--black);
+  padding: 30px 20px;
+}
+
+.brands img {
+  max-width: 90px;
+}
+
+
+/* #endregion */
