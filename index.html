@@ -69,6 +69,36 @@
           </a>
         </div>
       </div>
+      <nav class="navbar">
+       <a href="#" class="logo">SHOP.CO</a>
+       <div class="nav-list">
+        <a href="#" class="shop-link">
+          <span class="body">Shop</span>
+          <img src="./Assets/icons/arrow-down.png" width="10" alt="">
+        </a>
+        <a href="#">
+          <span class="body">On Sale</span>
+        </a>
+        <a href="#">
+          <span class="body">New Arrivals</span>
+        </a>
+        <a href="#">
+          <span class="body">Brands</span>
+        </a>
+       </div>
+       <div class="search">
+         <img src="./Assets/icons/magnify.png" alt="search">
+         <input type="text" placeholder="Search for products...">
+       </div>
+       <div class="actions">
+        <a href="">
+          <img src="./Assets/icons/cart.png" alt="cart">
+        </a>
+        <a href="">
+          <img src="./Assets/icons/user.png" alt="user">
+        </a>
+       </div>
+      </nav>
     </div>
   </header>
 
@@ -83,27 +113,27 @@
           <h1 class="h1 title">
             FIND CLOTHES THAT MATCHES YOUR STYLE
           </h1>
-          <p class="text decs">
+          <p class="body decs">
             Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality
             and cater to your sense of style.
           </p>
           <button class="hero-btn">Shop Now</button>
           <div class="achivements">
             <div class="content">
-              <h4>200+</h4>
-              <span class="text">
+              <h4 class="h3">200+</h4>
+              <span class="text-sm ">
                 International Brands
               </span>
             </div>
             <div class="content">
-              <h4>2,000+</h4>
-              <span class="text">
+              <h4 class="h3">2,000+</h4>
+              <span class="text-sm ">
                 High-Quality Products
               </span>
             </div>
             <div class="content">
-              <h4>30,000+</h4>
-              <span class="text">
+              <h4 class="h3">30,000+</h4>
+              <span class="text-sm ">
                 Happy Customers
               </span>
             </div>
@@ -122,263 +152,467 @@
       </div>
     </section>
 
-  <!--------------
+    <!--------------
     NEW ARRIVALS
   ---------------->
-  <section class="section new-arrival products-section">
-  <div class="container">
-    <div class="products-wrapper">
-      <h2 class="h2 title">NEW ARRIVALS</h2>
-      <ul class="product-list">
-        <li class="product">
-          <div class="product-banner">
-            <img src="./Assets/images/new-arrival-1.png" alt="new-arrival-1">
-          </div>
-           <div class="product-details">
-            <h4 class="body">
-              T-shirt with Tape Details
-            </h4>
-             <div class="rating">
-              <img src="./Assets/images/4.5stars.png" alt="stars">
-              <p class="rating-count">
-                <span>4.5/</span>
-                <span>5</span>
-              </p>
-             </div>
-             <div class="price">
-              <h4 class="amount">
-              $120
-             </h4>
-             <h4 class="orignal-amount">$260</h4>
-             <span class="discount">-20%</span>
-             </div>
-           </div>
-        </li>
-        <li class="product discount-active">
-          <div class="product-banner">
-            <img src="./Assets/images/new-arrival-2.png" alt="new-arrival-2">
-          </div>
-           <div class="product-details">
-            <h4 class="body">
-              SKINNY FIT JEANS
-            </h4>
-             <div class="rating">
-              <img src="./Assets/images/3.5stars.png" alt="stars">
-              <p class="rating-count">
-                <span>4.5/</span>
-                <span>5</span>
-              </p>
-             </div>
-             <div class="price">
-              <h4 class="label-md amount">
-              $240
-             </h4>
-             <h4 class="label-md orignal-amount">$260</h4>
-             <span class="discount">-20%</span>
-             </div>
-           </div>
-        </li>
-        <li class="product">
-          <div class="product-banner">
-            <img src="./Assets/images/new-arrival-3.png" alt="new-arrival-3">
-          </div>
-           <div class="product-details">
-            <h4 class="body">
-              CHECKERED SHIRT
-            </h4>
-             <div class="rating">
-              <img src="./Assets/images/4.5stars.png" alt="stars">
-            <p class="rating-count">
-                <span>4.5/</span>
-                <span>5</span>
-              </p>
-             </div>
-             <div class="price">
-              <h4 class="label-md amount">
-              $180
-             </h4>
-             <h4 class="label-md orignal-amount">$260</h4>
-             <span class="discount">-20%</span>
-             </div>
-           </div>
-        </li>
-        <li class="product discount-active">
-          <div class="product-banner">
-            <img src="./Assets/images/new-arrival-4.png" alt="new-arrival-4">
-          </div>
-           <div class="product-details">
-            <h4 class="body">
-             SLEEVE STRIPED T-SHIRT
-            </h4>
-             <div class="rating">
-              <img src="./Assets/images/5stars.png" alt="stars">
-              <p class="rating-count">
-                <span>4.5/</span>
-                <span>5</span>
-              </p>
-             </div>
-             <div class="price">
-              <h4 class="label-md amount">
-              $130
-             </h4>
-             <h4 class="label-md orignal-amount">$160</h4>
-             <span class="discount">-30%</span>
-             </div>
-           </div>
-        </li>
-      </ul>
-      <button class="arrival-btn">
-        View All
-      </button>
-    </div>
-  </div>
-  <span class="line"></span>
-  </section>
+    <section class="section new-arrival products-section">
+      <div class="container">
+        <div class="products-wrapper">
+          <h2 class="h2 title">NEW ARRIVALS</h2>
+          <ul class="product-list">
+            <li class="product">
+              <div class="product-banner">
+                <img src="./Assets/images/new-arrival-1.png" alt="new-arrival-1">
+              </div>
+              <div class="product-details">
+                <h4 class="body-bold">
+                  T-shirt with Tape Details
+                </h4>
+                <div class="rating">
+                  <img src="./Assets/images/4.5stars.png" alt="stars">
+                  <p class="rating-count">
+                    <span class="text-sm">4.5/</span>
+                    <span class="text-sm">5</span>
+                  </p>
+                </div>
+                <div class="price">
+                  <h4 class="amount">
+                    $120
+                  </h4>
+                  <h4 class="orignal-amount">$260</h4>
+                  <span class="discount">-20%</span>
+                </div>
+              </div>
+            </li>
+            <li class="product discount-active">
+              <div class="product-banner">
+                <img src="./Assets/images/new-arrival-2.png" alt="new-arrival-2">
+              </div>
+              <div class="product-details">
+                <h4 class="body-bold">
+                  SKINNY FIT JEANS
+                </h4>
+                <div class="rating">
+                  <img src="./Assets/images/3.5stars.png" alt="stars">
+                  <p class="rating-count">
+                    <span class="text-sm">4.5/</span>
+                    <span class="text-sm">5</span>
+                  </p>
+                </div>
+                <div class="price">
+                  <h4 class="h4 amount">
+                    $240
+                  </h4>
+                  <h4 class="h4 orignal-amount">$260</h4>
+                  <span class="discount">-20%</span>
+                </div>
+              </div>
+            </li>
+            <li class="product">
+              <div class="product-banner">
+                <img src="./Assets/images/new-arrival-3.png" alt="new-arrival-3">
+              </div>
+              <div class="product-details">
+                <h4 class="body-bold">
+                  CHECKERED SHIRT
+                </h4>
+                <div class="rating">
+                  <img src="./Assets/images/4.5stars.png" alt="stars">
+                  <p class="rating-count">
+                    <span class="text-sm">4.5/</span>
+                    <span class="text-sm">5</span>
+                  </p>
+                </div>
+                <div class="price">
+                  <h4 class="h4 amount">
+                    $180
+                  </h4>
+                  <h4 class="h4 orignal-amount">$260</h4>
+                  <span class="discount">-20%</span>
+                </div>
+              </div>
+            </li>
+            <li class="product discount-active">
+              <div class="product-banner">
+                <img src="./Assets/images/new-arrival-4.png" alt="new-arrival-4">
+              </div>
+              <div class="product-details">
+                <h4 class="body-bold">
+                  SLEEVE STRIPED T-SHIRT
+                </h4>
+                <div class="rating">
+                  <img src="./Assets/images/5stars.png" alt="stars">
+                  <p class="rating-count">
+                    <span class="text-sm">4.5/</span>
+                    <span class="text-sm">5</span>
+                  </p>
+                </div>
+                <div class="price">
+                  <h4 class="h4 amount">
+                    $130
+                  </h4>
+                  <h4 class="h4 orignal-amount">$160</h4>
+                  <span class="discount">-30%</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button class="arrival-btn">
+            View All
+          </button>
+        </div>
+      </div>
+      <span class="line"></span>
+    </section>
 
     <!--------------
     TOP SELLINGS
   ---------------->
-  <section class="section top-selling products-section">
-  <div class="container">
-    <div class="products-wrapper">
-      <h2 class="h2 title">TOP SELLINGS</h2>
-      <ul class="product-list">
-        <li class="product discount-active">
-          <div class="product-banner">
-            <img src="./Assets/images/top-selling-1.png" alt="top-selling-1">
-          </div>
-           <div class="product-details">
-            <h4 class="body">
-              VERTICAL STRIPED SHIRT
-            </h4>
-             <div class="rating">
-              <img src="./Assets/images/5stars.png" alt="stars">
-              <p class="rating-count">
-                <span>5/</span>
-                <span>5</span>
-              </p>
-             </div>
-             <div class="price">
-              <h4 class="amount">
-              $212
-             </h4>
-             <h4 class="orignal-amount">$232</h4>
-             <span class="discount">-20%</span>
-             </div>
-           </div>
-        </li>
-        <li class="product ">
-          <div class="product-banner">
-            <img src="./Assets/images/top-selling-2.png" alt="top-selling-1">
-          </div>
-           <div class="product-details">
-            <h4 class="body">
-              COURAGE GRAPHIC T-SHIRT
-            </h4>
-             <div class="rating">
-              <img src="./Assets/images/4.5stars.png" alt="stars">
-              <p class="rating-count">
-                <span>4.5/</span>
-                <span>5</span>
-              </p>
-             </div>
-             <div class="price">
-              <h4 class="label-md amount">
-              $145
-             </h4>
-             <h4 class="label-md orignal-amount">$260</h4>
-             <span class="discount">-20%</span>
-             </div>
-           </div>
-        </li>
-        <li class="product">
-          <div class="product-banner">
-            <img src="./Assets/images/top-selling-3.png" alt="top-selling-3">
-          </div>
-           <div class="product-details">
-            <h4 class="body">
-              LOOSE FIT BERMUDA SHORTS
-            </h4>
-             <div class="rating">
-              <img src="./Assets/images/3.5stars.png" alt="stars">
-            <p class="rating-count">
-                <span>3.5/</span>
-                <span>5</span>
-              </p>
-             </div>
-             <div class="price">
-              <h4 class="label-md amount">
-              $80
-             </h4>
-             <h4 class="label-md orignal-amount">$260</h4>
-             <span class="discount">-20%</span>
-             </div>
-           </div>
-        </li>
-        <li class="product ">
-          <div class="product-banner">
-            <img src="./Assets/images/top-selling-4.png" alt="top-selling-4">
-          </div>
-           <div class="product-details">
-            <h4 class="body">
-             FADED SKINNY JEANS
-            </h4>
-             <div class="rating">
-              <img src="./Assets/images/4.5stars.png" alt="stars">
-              <p class="rating-count">
-                <span>4.5/</span>
-                <span>5</span>
-              </p>
-             </div>
-             <div class="price">
-              <h4 class="label-md amount">
-              $210
-             </h4>
-             <h4 class="label-md orignal-amount">$160</h4>
-             <span class="discount">-30%</span>
-             </div>
-           </div>
-        </li>
-      </ul>
-      <button class="arrival-btn">
-        View All
-      </button>
-    </div>
-  </div>
-  </section>
+    <section class="section top-selling products-section">
+      <div class="container">
+        <div class="products-wrapper">
+          <h2 class="h2 title">TOP SELLINGS</h2>
+          <ul class="product-list">
+            <li class="product discount-active">
+              <div class="product-banner">
+                <img src="./Assets/images/top-selling-1.png" alt="top-selling-1">
+              </div>
+              <div class="product-details">
+                <h4 class="body-bold">
+                  VERTICAL STRIPED SHIRT
+                </h4>
+                <div class="rating">
+                  <img src="./Assets/images/5stars.png" alt="stars">
+                  <p class="rating-count">
+                    <span class="text-sm">5/</span>
+                    <span class="text-sm">5</span>
+                  </p>
+                </div>
+                <div class="price">
+                  <h4 class="amount h4">
+                    $212
+                  </h4>
+                  <h4 class="orignal-amount h4">$232</h4>
+                  <span class="discount">-20%</span>
+                </div>
+              </div>
+            </li>
+            <li class="product ">
+              <div class="product-banner">
+                <img src="./Assets/images/top-selling-2.png" alt="top-selling-1">
+              </div>
+              <div class="product-details">
+                <h4 class="body-bold">
+                  COURAGE GRAPHIC T-SHIRT
+                </h4>
+                <div class="rating">
+                  <img src="./Assets/images/4.5stars.png" alt="stars">
+                  <p class="rating-count">
+                    <span class="text-sm">4.5/</span>
+                    <span class="text-sm">5</span>
+                  </p>
+                </div>
+                <div class="price">
+                  <h4 class="h4 amount">
+                    $145
+                  </h4>
+                  <h4 class="h4 orignal-amount">$260</h4>
+                  <span class="discount">-20%</span>
+                </div>
+              </div>
+            </li>
+            <li class="product">
+              <div class="product-banner">
+                <img src="./Assets/images/top-selling-3.png" alt="top-selling-3">
+              </div>
+              <div class="product-details">
+                <h4 class="body-bold">
+                  LOOSE FIT BERMUDA SHORTS
+                </h4>
+                <div class="rating">
+                  <img src="./Assets/images/3.5stars.png" alt="stars">
+                  <p class="rating-count">
+                    <span class="text-sm">3.5/</span>
+                    <span class="text-sm">5</span>
+                  </p>
+                </div>
+                <div class="price">
+                  <h4 class="h4 amount">
+                    $80
+                  </h4>
+                  <h4 class="h4 orignal-amount">$260</h4>
+                  <span class="discount">-20%</span>
+                </div>
+              </div>
+            </li>
+            <li class="product ">
+              <div class="product-banner">
+                <img src="./Assets/images/top-selling-4.png" alt="top-selling-4">
+              </div>
+              <div class="product-details">
+                <h4 class="body-bold">
+                  FADED SKINNY JEANS
+                </h4>
+                <div class="rating">
+                  <img src="./Assets/images/4.5stars.png" alt="stars">
+                  <p class="rating-count">
+                    <span class="text-sm">4.5/</span>
+                    <span class="text-sm">5</span>
+                  </p>
+                </div>
+                <div class="price">
+                  <h4 class="h4 amount">
+                    $210
+                  </h4>
+                  <h4 class="h4 orignal-amount">$160</h4>
+                  <span class="discount">-30%</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button class="arrival-btn">
+            View All
+          </button>
+        </div>
+      </div>
+    </section>
 
-  <!--------------
+    <!--------------
     GALLARY
   ---------------->
-
-  <section class="section gallery">
-    <div class="container">
-      <div class="gallery-wrapper">
-        <h2 class="h2">
-          BROWSE BY DRESS STYLE
-        </h2>
-        <div class="grid">
-          <div class="grid-item box-1" >
-            <span class="title">Casual</span>
-            <img src="./Assets/images/bento-1.png" style="grid-area: box-1;"  alt="">
-          </div>
-          <div class="grid-item box-2" style="grid-area: box-2;" >
-            <span class="title">Formal</span>
-            <img src="./Assets/images/bento-2.png"  alt="">
-          </div>
-          <div class="grid-item box-3" style="grid-area: box-3;">
-            <span class="title">Party</span>
-            <img src="./Assets/images/bento-3.png" alt="">
-          </div>
-          <div class="grid-item box-4" style="grid-area: box-4;">
-            <span class="title">Gym</span>
-            <img src="./Assets/images/bento-4.png" alt="">
+    <section class="section gallery">
+      <div class="container">
+        <div class="gallery-wrapper">
+          <h2 class="h2">
+            BROWSE BY DRESS STYLE
+          </h2>
+          <div class="grid">
+            <div class="grid-item box-1">
+              <span class="title">Casual</span>
+              <img src="./Assets/images/bento-1.png" style="grid-area: box-1;" alt="">
+            </div>
+            <div class="grid-item box-2" style="grid-area: box-2;">
+              <span class="title">Formal</span>
+              <img src="./Assets/images/bento-2.png" alt="">
+            </div>
+            <div class="grid-item box-3" style="grid-area: box-3;">
+              <span class="title">Party</span>
+              <img src="./Assets/images/bento-3.png" alt="">
+            </div>
+            <div class="grid-item box-4" style="grid-area: box-4;">
+              <span class="title">Gym</span>
+              <img src="./Assets/images/bento-4.png" alt="">
+            </div>
           </div>
         </div>
       </div>
+    </section>
+
+    <!--------------
+    REVIEWS
+  ---------------->
+    <section class="section reviews">
+      <div class="container">
+        <div class="review-wrapper">
+          <div class="review-top">
+            <h2 class="h2">OUR HAPPY CUSTOMERS</h2>
+            <div class="slider-btns">
+              <button class="left-slider">
+                <img src="./Assets/icons/slide-left.png" alt="">
+              </button>
+              <button class="right-slider">
+                <img src="./Assets/icons/slide-right.png" alt="">
+              </button>
+            </div>
+          </div>
+          <ul class="review-list">
+            <li class="review-item">
+              <img src="./Assets/images/5stars.png" alt="stars" class="star-rating">
+              <div class="customer">
+                <h3 class="body-bold">James L.</h3>
+                <img src="./Assets/icons/verify.png" alt="verify">
+              </div>
+              <p class="review-text">
+                "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon
+                Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”
+              </p>
+            </li>
+            <li class="review-item">
+              <img src="./Assets/images/5stars.png" alt="stars" class="star-rating">
+              <div class="customer">
+                <h3 class="body-bold">Alex K.</h3>
+                <img src="./Assets/icons/verify.png" alt="verify">
+              </div>
+              <p class="review-text">
+                "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co.
+                The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”
+              </p>
+            </li>
+            <li class="review-item">
+              <img src="./Assets/images/5stars.png" alt="stars" class="star-rating">
+              <div class="customer">
+                <h3 class="body-bold">Sarah M.</h3>
+                <img src="./Assets/icons/verify.png" alt="verify">
+              </div>
+              <p class="review-text">
+                "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to
+                elegant dresses, every piece I've bought has exceeded my expectations.”
+              </p>
+            </li>
+            <li class="review-item">
+              <img src="./Assets/images/5stars.png" alt="stars" class="star-rating">
+              <div class="customer">
+                <h3 class="body-bold">Mooen</h3>
+                <img src="./Assets/icons/verify.png" alt="verify">
+              </div>
+              <p class="review-text">
+                "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon
+                Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”
+              </p>
+            </li>
+            <li class="review-item">
+              <img src="./Assets/images/5stars.png" alt="stars" class="star-rating">
+              <div class="customer">
+                <h3 class="body-bold">Max D.</h3>
+                <img src="./Assets/icons/verify.png" alt="verify">
+              </div>
+              <p class="review-text">
+                "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon
+                Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  <!--------------
+    NEWS LETTER
+  ---------------->
+   <section class="news-letter">
+    <div class="container">
+      <div class="content-wrapper">
+        <h2 class="h2">
+          STAY UPTO DATE ABOUT OUR LATEST OFFERS
+        </h2>
+        <div class="input-container">
+          <img src="./Assets/icons/email.png" alt="email">
+          <input type="email" name="email" id="email">
+        </div>
+        <button class="submit-btn">Subscribe to Newsletter</button>
+      </div>
     </div>
-  </section>
+   </section>
   </main>
+
+  <!--------------
+    FOOTER
+  ---------------->
+  
+   <footer>
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer-text">
+          <a href="#" class="logo">SHOP.CO</a>
+          <p class="text">We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+          <div class="socail-links">
+            <a href="" class="twitter link-icon">
+              <img src="./Assets/icons/logo-twitter 2.png" alt="twitter">
+            </a>
+            <a href="" class="facebook link-icon">
+              <img src="./Assets/icons/logo-fb-simple.png" alt="facebook">
+            </a>
+            <a href="" class="instagram link-icon">
+              <img src="./Assets/icons/insta.png" alt="instagram">
+            </a>
+            <a href="" class="github link-icon">
+              <img src="./Assets/icons/logo-github 1.png" alt="github">
+            </a>
+          </div>
+        </div>
+        <div class="footer-content">
+          <div class="footer-links">
+            <h4 class="h4">Company</h4>
+            <ul class="links-list">
+            <li class="footer-item">
+              <a href="" class="body">About</a>
+            </li>
+            <li class="footer-item">
+              <a href="" class="body">Features</a>
+            </li>
+            <li class="footer-item">
+              <a href="" class="body">Works</a>
+            </li>
+            <li class="footer-item">
+              <a href="" class="body">Career</a>
+            </li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4 class="h4">HELP</h4>
+            <ul class="links-list">
+            <li class="footer-item">
+              <a href="" class="body">Customer Support</a>
+            </li>
+            <li class="footer-item">
+              <a href="" class="body">Delivery Details</a>
+            </li>
+            <li class="footer-item">
+              <a href="" class="body">Terms & Conditions</a>
+            </li>
+            <li class="footer-item">
+              <a href="" class="body">Privacy Policy</a>
+            </li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4 class="h4">FAQ</h4>
+            <ul class="links-list">
+            <li class="footer-item">
+              <a href="" class="body" >Account</a>
+            </li>
+            <li class="footer-item">
+              <a href="" class="body">Manage Deliveries</a>
+            </li>
+            <li class="footer-item">
+              <a href="" class="body">Orders</a>
+            </li>
+            <li class="footer-item">
+              <a href="" class="body">Payment</a>
+            </li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4 class="h4">RESOURCES</h4>
+            <ul class="links-list">
+            <li class="footer-item">
+              <a href="" class="body">Free eBook</a>
+            </li>
+            <li class="footer-item">
+              <a href="" class="body">Development Tutorail</a>
+            </li>
+            <li class="footer-item">
+              <a href="" class="body">How to - Blog</a>
+            </li>
+            <li class="footer-item">
+              <a href="" class="body">Youtube Playlist</a>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+       <div class="sub-footer">
+         <p class="copyright body">Shop.co © 2000-2023, All Rights Reserved</p>
+         <div class="payment-methods">
+          <img src="./Assets/images/visa.png" alt="visa">
+          <img src="./Assets/images/debitcard.png" alt="debitcard">
+          <img src="./Assets/images/paypal.png" alt="paypal">
+          <img src="./Assets/images/ApplePay.png" alt="ApplePay">
+          <img src="./Assets/images/Gpay.png" alt="Gpay">
+         </div>
+       </div>
+    </div>
+   </footer>
 
   <!--------------
      JS LINKS 
