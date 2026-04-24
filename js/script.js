@@ -4,7 +4,16 @@ const maxRange = document.getElementById("maxRange");
 const minRangeValue = document.getElementById("range-min-value");
 const maxRangeValue = document.getElementById("range-max-value");
 const range = document.querySelector(".range")
+const filterBtn = document.querySelectorAll('[data-filter]');
+const sideBar = document.querySelector('.sidebar-filter ');
 
+filterBtn.forEach((btn) =>{
+ btn.addEventListener("click",()=>{
+  sideBar.classList.toggle("active");
+  document.body.classList.toggle("active");
+  console.log("hello");
+ })
+});
 
 const minGap = 300;
 const maxValue = 10000;
