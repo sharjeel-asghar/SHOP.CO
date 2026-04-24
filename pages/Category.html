@@ -55,7 +55,7 @@
           <button class="menu-bar nav-icon">
             <img src="../Assets/icons/bars.png" alt="">
           </button>
-          <a href="#" class="logo">SHOP.CO</a>
+          <a href="../index.html" class="logo">SHOP.CO</a>
         </div>
         <div class="right-actions">
           <a href="" class="search-icon nav-icon">
@@ -70,9 +70,9 @@
         </div>
       </div>
       <nav class="navbar">
-        <a href="#" class="logo">SHOP.CO</a>
+        <a href="../index.html" class="logo">SHOP.CO</a>
         <div class="nav-list">
-          <a href="#" class="shop-link">
+          <a href="../pages/Category.html" class="shop-link">
             <span class="body">Shop</span>
             <img src="../Assets/icons/arrow-down.png" width="10" alt="">
           </a>
@@ -106,268 +106,395 @@
 
     <div class="breadcrumbs">
       <a href="" class="text-md">Home</a>
-      <span class="text-md">></span>
+      <img src="../Assets/icons/greaterthen.png" width="6px" alt="">
       <a href="" class="text-md">Casual</a>
-      <span class="text-md">></span>
     </div>
 
-    <!--------------
-    products category
+
+    <article>
+      <!--------------
+    Sidebar Filter
   ---------------->
-    <section class="section category-products products-section">
-      <div class="container">
-        <div class="products-wrapper">
-          <div class="category-action">
-            <div class="action-text">
-              <h4 class="h4">Casual</h4>
-              <span class="text-sm">Showing 1-10 of 100 Products</span>
+      <section class="sidebar-filter">
+        <div class="container">
+          <div class="filter-wrapper">
+            <div class="section-heading">
+              <h4 class="h4">Filters</h4>
+              <button class="close-filter">
+                <img src="../Assets/icons/close.png" alt="close">
+              </button>
             </div>
-            <div class="fitler-option">
-              <button class="filter">
-                <img src="../Assets/icons/filter.png" alt="">
+            <div class="search-by-product">
+              <button class="product-name">
+                <span class="text-md">T-shirts</span>
+                <img src="../Assets/icons/greaterthen.png" alt="">
+              </button>
+              <button class="product-name">
+                <span class="text-md">Shorts</span>
+                <img src="../Assets/icons/greaterthen.png" alt="">
+              </button>
+              <button class="product-name">
+                <span class="text-md">Shirts</span>
+                <img src="../Assets/icons/greaterthen.png" alt="">
+              </button>
+              <button class="product-name">
+                <span class="text-md">Hoodie</span>
+                <img src="../Assets/icons/greaterthen.png" alt="">
+              </button>
+              <button class="product-name">
+                <span class="text-md">Jeans</span>
+                <img src="../Assets/icons/greaterthen.png" alt="">
+              </button>
+            </div>
+            <div class="search-by-price">
+              <div class="content-text">
+                <h4 class="h4">Price</h4>
+                <img src="../Assets/icons/arrow-up.png" alt="up">
+              </div>
+              <div class="range-values">
+                <span class="body-bold" id="range-min-value">7400</span>
+                <span class="body-bold" id="range-max-value">8400</span>
+              </div>
+              <div class="range-slider">
+                <div class="track"></div>
+                <div class="range"></div>
+                <input type="range" id="minRange" min="0" max="10000" value="7400">
+                <input type="range" id="maxRange" min="0" max="10000" value="8400">
+              </div>
+            </div>
+            <div class="search-by-colors">
+              <div class="content-text">
+                <h4 class="h4">Colors</h4>
+                <img src="../Assets/icons/arrow-up.png" alt="up">
+              </div>
+              <div class="color-list">
+                <button class="color-filter" style="background-color:#00C12B ;">
+                </button>
+                <button class="color-filter" style="background-color:#F50606 ;">
+                </button>
+                <button class="color-filter" style="background-color:#F5DD06;">
+                </button>
+                <button class="color-filter" style="background-color:#F57906;">
+                </button>
+                <button class="color-filter" style="background-color:#06CAF5;">
+                </button>
+                <button class="color-filter selected" style="background-color:#063AF5;">
+                </button>
+                <button class="color-filter" style="background-color:#7D06F5;">
+                </button>
+                <button class="color-filter" style="background-color:#F506A4;">
+                </button>
+                <button class="color-filter" style="background-color:#F506A4;">
+                </button>
+                <button class="color-filter" style="background-color:#000000;">
+                </button>
+              </div>
+            </div>
+            <div class="search-by-size">
+              <div class="content-text">
+                <h4 class="h4">Size</h4>
+                <img src="../Assets/icons/arrow-up.png" alt="up">
+              </div>
+              <div class="size-list">
+                <button class="size-filter text">XX-Small</button>
+                <button class="size-filter text">X-Small</button>
+                <button class="size-filter text">Small</button>
+                <button class="size-filter text">Medium</button>
+                <button class="size-filter selected text">Large</button>
+                <button class="size-filter text">X-Large</button>
+                <button class="size-filter text">XX-Large</button>
+                <button class="size-filter text">3X-Large</button>
+                <button class="size-filter text">4X-Large</button>
+              </div>
+            </div>
+            <div class="search-by-style">
+              <div class="content-text">
+                <h4 class="h4">Dress Style</h4>
+                <img src="../Assets/icons/arrow-up.png" alt="up">
+              </div>
+              <div class="style-list">
+                <button class="style-filter">
+                  <span class="text-md">Casual</span>
+                  <img src="../Assets/icons/greaterthen.png" alt="">
+                </button>
+                <button class="style-filter">
+                  <span class="text-md">Formal</span>
+                  <img src="../Assets/icons/greaterthen.png" alt="">
+                </button>
+                <button class="style-filter">
+                  <span class="text-md">Party</span>
+                  <img src="../Assets/icons/greaterthen.png" alt="">
+                </button>
+                <button class="style-filter">
+                  <span class="text-md">Gym</span>
+                  <img src="../Assets/icons/greaterthen.png" alt="">
+                </button>
+              </div>
+              <button class="apply-filter">
+                Apply Filter
               </button>
             </div>
           </div>
-          <ul class="product-list">
-            <li class="product discount-active">
-              <div class="product-banner">
-                <img src="../Assets/images/might-like-1.png" alt="might-like-1">
+        </div>
+      </section>
+
+      <!--------------
+    products category
+  ---------------->
+      <section class="section category-products products-section">
+        <div class="container">
+          <div class="products-wrapper">
+            <div class="category-action">
+              <div class="action-text">
+                <h4 class="h4">Casual</h4>
+                <span class="text-sm">Showing 1-10 of 100 Products</span>
               </div>
-              <div class="product-details">
-                <h4 class="body-bold">
-                  Polo with Contrast Trims
-                </h4>
-                <div class="rating">
-                  <img src="../Assets/images/5stars.png" alt="stars">
-                  <p class="rating-count">
-                    <span class="text-sm">5/</span>
-                    <span class="text-sm">5</span>
-                  </p>
-                </div>
-                <div class="price">
-                  <h4 class="amount h4">
-                    $212
-                  </h4>
-                  <h4 class="orignal-amount h4">$242</h4>
-                  <span class="discount">-20%</span>
-                </div>
+              <div class="fitler-option">
+                <button class="filter">
+                  <img src="../Assets/icons/filter.png" alt="">
+                </button>
               </div>
-            </li>
-            <li class="product ">
-              <div class="product-banner">
-                <img src="../Assets/images/might-like-2.png" alt="might-like-2">
-              </div>
-              <div class="product-details">
-                <h4 class="body-bold">
-                  Gradient Graphic T-shirt
-                </h4>
-                <div class="rating">
-                  <img src="../Assets/images/4.5stars.png" alt="stars">
-                  <p class="rating-count">
-                    <span class="text-sm">4.5/</span>
-                    <span class="text-sm">5</span>
-                  </p>
-                </div>
-                <div class="price">
-                  <h4 class="h4 amount">
-                    $145
-                  </h4>
-                  <h4 class="h4 orignal-amount">$260</h4>
-                  <span class="discount">-20%</span>
-                </div>
-              </div>
-            </li>
-            <li class="product">
-              <div class="product-banner">
-                <img src="../Assets/images/might-like-3.png" alt="might-like-3">
-              </div>
-              <div class="product-details">
-                <h4 class="body-bold">
-                  Polo with Tipping Details
-                </h4>
-                <div class="rating">
-                  <img src="../Assets/images/3.5stars.png" alt="stars">
-                  <p class="rating-count">
-                    <span class="text-sm">3.5/</span>
-                    <span class="text-sm">5</span>
-                  </p>
-                </div>
-                <div class="price">
-                  <h4 class="h4 amount">
-                    $80
-                  </h4>
-                  <h4 class="h4 orignal-amount">$260</h4>
-                  <span class="discount">-20%</span>
-                </div>
-              </div>
-            </li>
-            <li class="product ">
-              <div class="product-banner">
-                <img src="../Assets/images/might-like-4.png" alt="might-like-4">
-              </div>
-              <div class="product-details">
-                <h4 class="body-bold">
-                  Black Striped T-shirt
-                </h4>
-                <div class="rating">
-                  <img src="../Assets/images/4.5stars.png" alt="stars">
-                  <p class="rating-count">
-                    <span class="text-sm">4.5/</span>
-                    <span class="text-sm">5</span>
-                  </p>
-                </div>
-                <div class="price">
-                  <h4 class="h4 amount">
-                    $210
-                  </h4>
-                  <h4 class="h4 orignal-amount">$150</h4>
-                  <span class="discount">-30%</span>
-                </div>
-              </div>
-            </li>
-            <li class="product">
-              <div class="product-banner">
-                <img src="../Assets/images/new-arrival-1.png" alt="new-arrival-1">
-              </div>
-              <div class="product-details">
-                <h4 class="body-bold">
-                  T-shirt with Tape Details
-                </h4>
-                <div class="rating">
-                  <img src="../Assets/images/4.5stars.png" alt="stars">
-                  <p class="rating-count">
-                    <span class="text-sm">4.5/</span>
-                    <span class="text-sm">5</span>
-                  </p>
-                </div>
-                <div class="price">
-                  <h4 class="amount">
-                    $120
-                  </h4>
-                  <h4 class="orignal-amount">$260</h4>
-                  <span class="discount">-20%</span>
-                </div>
-              </div>
-            </li>
-            <li class="product discount-active">
-              <div class="product-banner">
-                <img src="../Assets/images/new-arrival-2.png" alt="new-arrival-2">
-              </div>
-              <div class="product-details">
-                <h4 class="body-bold">
-                  SKINNY FIT JEANS
-                </h4>
-                <div class="rating">
-                  <img src="../Assets/images/3.5stars.png" alt="stars">
-                  <p class="rating-count">
-                    <span class="text-sm">4.5/</span>
-                    <span class="text-sm">5</span>
-                  </p>
-                </div>
-                <div class="price">
-                  <h4 class="h4 amount">
-                    $240
-                  </h4>
-                  <h4 class="h4 orignal-amount">$260</h4>
-                  <span class="discount">-20%</span>
-                </div>
-              </div>
-            </li>
-            <li class="product">
-              <div class="product-banner">
-                <img src="../Assets/images/new-arrival-3.png" alt="new-arrival-3">
-              </div>
-              <div class="product-details">
-                <h4 class="body-bold">
-                  CHECKERED SHIRT
-                </h4>
-                <div class="rating">
-                  <img src="../Assets/images/4.5stars.png" alt="stars">
-                  <p class="rating-count">
-                    <span class="text-sm">4.5/</span>
-                    <span class="text-sm">5</span>
-                  </p>
-                </div>
-                <div class="price">
-                  <h4 class="h4 amount">
-                    $180
-                  </h4>
-                  <h4 class="h4 orignal-amount">$260</h4>
-                  <span class="discount">-20%</span>
-                </div>
-              </div>
-            </li>
-            <li class="product discount-active">
-              <div class="product-banner">
-                <img src="../Assets/images/new-arrival-4.png" alt="new-arrival-4">
-              </div>
-              <div class="product-details">
-                <h4 class="body-bold">
-                  SLEEVE STRIPED T-SHIRT
-                </h4>
-                <div class="rating">
-                  <img src="../Assets/images/5stars.png" alt="stars">
-                  <p class="rating-count">
-                    <span class="text-sm">4.5/</span>
-                    <span class="text-sm">5</span>
-                  </p>
-                </div>
-                <div class="price">
-                  <h4 class="h4 amount">
-                    $130
-                  </h4>
-                  <h4 class="h4 orignal-amount">$160</h4>
-                  <span class="discount">-30%</span>
-                </div>
-              </div>
-            </li>
-            <li class="product discount-active">
-              <div class="product-banner">
-                <img src="../Assets/images/top-selling-1.png" alt="top-selling-1">
-              </div>
-              <div class="product-details">
-                <h4 class="body-bold">
-                  VERTICAL STRIPED SHIRT
-                </h4>
-                <div class="rating">
-                  <img src="../Assets/images/5stars.png" alt="stars">
-                  <p class="rating-count">
-                    <span class="text-sm">5/</span>
-                    <span class="text-sm">5</span>
-                  </p>
-                </div>
-                <div class="price">
-                  <h4 class="amount h4">
-                    $212
-                  </h4>
-                  <h4 class="orignal-amount h4">$232</h4>
-                  <span class="discount">-20%</span>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <div class="pagination">
-            <button class="prev">
-              <img src="../Assets/icons/slide-left.png" alt="">
-              <span class="body">Previous</span>
-            </button>
-            <div class="pages-numbers">
-              <button class="page-count">1</button>
-              <button class="page-count">2</button>
-              <button class="page-count all"><img src="../Assets/icons/Number.png" alt=""></button>
-              <button class="page-count">9</button>
-              <button class="page-count">10</button>
             </div>
-            <button class="next">
-              <span class="body">Next</span>
-              <img src="../Assets/icons/slide-right.png" alt="">
-            </button>
+            <ul class="product-list">
+              <li class="product discount-active">
+                <div class="product-banner">
+                  <img src="../Assets/images/might-like-1.png" alt="might-like-1">
+                </div>
+                <div class="product-details">
+                  <h4 class="body-bold">
+                    Polo with Contrast Trims
+                  </h4>
+                  <div class="rating">
+                    <img src="../Assets/images/5stars.png" alt="stars">
+                    <p class="rating-count">
+                      <span class="text-sm">5/</span>
+                      <span class="text-sm">5</span>
+                    </p>
+                  </div>
+                  <div class="price">
+                    <h4 class="amount h4">
+                      $212
+                    </h4>
+                    <h4 class="orignal-amount h4">$242</h4>
+                    <span class="discount">-20%</span>
+                  </div>
+                </div>
+              </li>
+              <li class="product ">
+                <div class="product-banner">
+                  <img src="../Assets/images/might-like-2.png" alt="might-like-2">
+                </div>
+                <div class="product-details">
+                  <h4 class="body-bold">
+                    Gradient Graphic T-shirt
+                  </h4>
+                  <div class="rating">
+                    <img src="../Assets/images/4.5stars.png" alt="stars">
+                    <p class="rating-count">
+                      <span class="text-sm">4.5/</span>
+                      <span class="text-sm">5</span>
+                    </p>
+                  </div>
+                  <div class="price">
+                    <h4 class="h4 amount">
+                      $145
+                    </h4>
+                    <h4 class="h4 orignal-amount">$260</h4>
+                    <span class="discount">-20%</span>
+                  </div>
+                </div>
+              </li>
+              <li class="product">
+                <div class="product-banner">
+                  <img src="../Assets/images/might-like-3.png" alt="might-like-3">
+                </div>
+                <div class="product-details">
+                  <h4 class="body-bold">
+                    Polo with Tipping Details
+                  </h4>
+                  <div class="rating">
+                    <img src="../Assets/images/3.5stars.png" alt="stars">
+                    <p class="rating-count">
+                      <span class="text-sm">3.5/</span>
+                      <span class="text-sm">5</span>
+                    </p>
+                  </div>
+                  <div class="price">
+                    <h4 class="h4 amount">
+                      $80
+                    </h4>
+                    <h4 class="h4 orignal-amount">$260</h4>
+                    <span class="discount">-20%</span>
+                  </div>
+                </div>
+              </li>
+              <li class="product ">
+                <div class="product-banner">
+                  <img src="../Assets/images/might-like-4.png" alt="might-like-4">
+                </div>
+                <div class="product-details">
+                  <h4 class="body-bold">
+                    Black Striped T-shirt
+                  </h4>
+                  <div class="rating">
+                    <img src="../Assets/images/4.5stars.png" alt="stars">
+                    <p class="rating-count">
+                      <span class="text-sm">4.5/</span>
+                      <span class="text-sm">5</span>
+                    </p>
+                  </div>
+                  <div class="price">
+                    <h4 class="h4 amount">
+                      $210
+                    </h4>
+                    <h4 class="h4 orignal-amount">$150</h4>
+                    <span class="discount">-30%</span>
+                  </div>
+                </div>
+              </li>
+              <li class="product">
+                <div class="product-banner">
+                  <img src="../Assets/images/new-arrival-1.png" alt="new-arrival-1">
+                </div>
+                <div class="product-details">
+                  <h4 class="body-bold">
+                    T-shirt with Tape Details
+                  </h4>
+                  <div class="rating">
+                    <img src="../Assets/images/4.5stars.png" alt="stars">
+                    <p class="rating-count">
+                      <span class="text-sm">4.5/</span>
+                      <span class="text-sm">5</span>
+                    </p>
+                  </div>
+                  <div class="price">
+                    <h4 class="amount">
+                      $120
+                    </h4>
+                    <h4 class="orignal-amount">$260</h4>
+                    <span class="discount">-20%</span>
+                  </div>
+                </div>
+              </li>
+              <li class="product discount-active">
+                <div class="product-banner">
+                  <img src="../Assets/images/new-arrival-2.png" alt="new-arrival-2">
+                </div>
+                <div class="product-details">
+                  <h4 class="body-bold">
+                    SKINNY FIT JEANS
+                  </h4>
+                  <div class="rating">
+                    <img src="../Assets/images/3.5stars.png" alt="stars">
+                    <p class="rating-count">
+                      <span class="text-sm">4.5/</span>
+                      <span class="text-sm">5</span>
+                    </p>
+                  </div>
+                  <div class="price">
+                    <h4 class="h4 amount">
+                      $240
+                    </h4>
+                    <h4 class="h4 orignal-amount">$260</h4>
+                    <span class="discount">-20%</span>
+                  </div>
+                </div>
+              </li>
+              <li class="product">
+                <div class="product-banner">
+                  <img src="../Assets/images/new-arrival-3.png" alt="new-arrival-3">
+                </div>
+                <div class="product-details">
+                  <h4 class="body-bold">
+                    CHECKERED SHIRT
+                  </h4>
+                  <div class="rating">
+                    <img src="../Assets/images/4.5stars.png" alt="stars">
+                    <p class="rating-count">
+                      <span class="text-sm">4.5/</span>
+                      <span class="text-sm">5</span>
+                    </p>
+                  </div>
+                  <div class="price">
+                    <h4 class="h4 amount">
+                      $180
+                    </h4>
+                    <h4 class="h4 orignal-amount">$260</h4>
+                    <span class="discount">-20%</span>
+                  </div>
+                </div>
+              </li>
+              <li class="product discount-active">
+                <div class="product-banner">
+                  <img src="../Assets/images/new-arrival-4.png" alt="new-arrival-4">
+                </div>
+                <div class="product-details">
+                  <h4 class="body-bold">
+                    SLEEVE STRIPED T-SHIRT
+                  </h4>
+                  <div class="rating">
+                    <img src="../Assets/images/5stars.png" alt="stars">
+                    <p class="rating-count">
+                      <span class="text-sm">4.5/</span>
+                      <span class="text-sm">5</span>
+                    </p>
+                  </div>
+                  <div class="price">
+                    <h4 class="h4 amount">
+                      $130
+                    </h4>
+                    <h4 class="h4 orignal-amount">$160</h4>
+                    <span class="discount">-30%</span>
+                  </div>
+                </div>
+              </li>
+              <li class="product discount-active">
+                <div class="product-banner">
+                  <img src="../Assets/images/top-selling-1.png" alt="top-selling-1">
+                </div>
+                <div class="product-details">
+                  <h4 class="body-bold">
+                    VERTICAL STRIPED SHIRT
+                  </h4>
+                  <div class="rating">
+                    <img src="../Assets/images/5stars.png" alt="stars">
+                    <p class="rating-count">
+                      <span class="text-sm">5/</span>
+                      <span class="text-sm">5</span>
+                    </p>
+                  </div>
+                  <div class="price">
+                    <h4 class="amount h4">
+                      $212
+                    </h4>
+                    <h4 class="orignal-amount h4">$232</h4>
+                    <span class="discount">-20%</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="pagination">
+              <button class="prev">
+                <img src="../Assets/icons/slide-left.png" alt="">
+                <span class="body">Previous</span>
+              </button>
+              <div class="pages-numbers">
+                <button class="page-count">1</button>
+                <button class="page-count">2</button>
+                <button class="page-count all"><img src="../Assets/icons/Number.png" alt=""></button>
+                <button class="page-count">9</button>
+                <button class="page-count">10</button>
+              </div>
+              <button class="next">
+                <span class="body">Next</span>
+                <img src="../Assets/icons/slide-right.png" alt="">
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-
+    </article>
 
 
     <!--------------
